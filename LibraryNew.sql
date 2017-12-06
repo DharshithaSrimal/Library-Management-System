@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS "Account";
+CREATE TABLE [Account] (Username varchar PRIMARY KEY UNIQUE,Name varchar,Password integer,Sec_Q varchar,Answer varchar);
+INSERT INTO "Account" VALUES('sdf','fds','Dfdg','What is your mother tounge?','dsf');
+INSERT INTO "Account" VALUES('Dharshitha','Dharshitha','Dharshitha','What is your mother tounge?','Dharshitha');
+DROP TABLE IF EXISTS "Book";
+CREATE TABLE [Book] (Book_ID integer PRIMARY KEY,Name varchar,Edition integer,Publisher varchar,Price integer,Pages integer);
+INSERT INTO "Book" VALUES(132,'Villege by the sea',12,'Villege by the sea',1232,212);
+DROP TABLE IF EXISTS "Issue";
+CREATE TABLE [Issue] (Book_ID integer,Name varchar,Edition integer,Publisher varchar,Price integer,Pages integer,Student_ID integer,FName varchar,LName varchar,Course varchar,Year integer,Semester integer);
+DROP TABLE IF EXISTS "Student";
+CREATE TABLE [Student] (Student_ID integer PRIMARY KEY,FName text,LName text,Course text,Branch text,Year integer,Semester integer);
+INSERT INTO "Student" VALUES(1,'Dharshitha','Senevirathne','MIT','Kelaniya',2,4);
